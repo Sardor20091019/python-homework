@@ -29,7 +29,7 @@ class ToDoList:
     def display_incomplete_tasks(self):
         return [str(task) for task in self.tasks if not task.status]
 
-# Main CLI
+
 def main():
     todo = ToDoList()
     while True:
@@ -136,7 +136,7 @@ class Blog:
     def display_latest_posts(self, count=5):
         return [str(post) for post in self.posts[-count:]]
 
-# Main CLI
+
 def main():
     blog = Blog()
     while True:
